@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cafe One Piece Jakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        .menu-items, .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .menu-item, .gallery-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .menu-item:hover, .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item h3, .gallery-item p {
+            margin: 0.5rem 0;
+        }
+        .menu-item .price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            opacity: 0;
+            animation: fadeInImage 2s forwards;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5rem 0;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        form {
+            max-width: 600px;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-bottom: 0.5rem;
+        }
+        form input, form textarea, form button {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #34495e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #2c3e50;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInImage {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cafe One Piece Jakarta</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Selamat datang di Cafe One Piece Jakarta!</h2>
+            <p>Selamat datang di Cafe One Piece Jakarta, tempat di mana petualangan kuliner bertemu dengan dunia One Piece! Kami ingin membawa Anda dalam perjalanan seru yang penuh rasa dan keajaiban, di mana setiap hidangan mengingatkan Anda pada karakter dan cerita favorit dari One Piece. Nikmati suasana yang penuh warna, bertemu dengan teman-teman dari dunia One Piece, dan rasakan pengalaman kuliner yang unik hanya di sini. Jangan lewatkan kesempatan untuk merasakan petualangan yang berbeda di Cafe One Piece Jakarta!!!</p>
+            <p>Tempat di mana petualangan kuliner bertemu dengan dunia One Piece. Nikmati hidangan lezat yang terinspirasi oleh karakter-karakter favorit dari One Piece dan rasakan atmosfer yang penuh warna!</p>
+            <img src="Area Depan Cafe.jpg" alt="Area luar Cafe One Piece Jakarta" class="home-image">
+            
+            <!-- Tombol navigasi untuk mengarahkan ke bagian 'About' -->
+            <div class="cta-container">
+                <p><strong>Siap untuk menjelajah dunia One Piece lebih dalam?</strong></p>
+                <a href="#about" class="cta-button">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menu-item {
+            width: 30%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        .menu-item img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0;
+        }
+
+        .menu-item p {
+            margin: 5px 0;
+        }
+
+        .menu-item .price {
+            font-weight: bold;
+            color: #e91e63;
+        }
+
+        @media (max-width: 768px) {
+            .menu-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-item {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Menu Kami</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Luffy Cheese Burger</h3>
+                    <img src="Burger Luffy.jpg" alt="Roti Burger Luffy">
+                    <p>Burger Asin Gurih dengan topping saoss, mayo dan cheese,serta irisan daging, tomato, salada,  dan sangat cocok untuk peminat rasa Asin/Gurih. Dijamin bikin ketagihan!</p>
+                    <p class="price">Rp 45.000</p>
+                </div>
+                <div class="menu-item">
+                    <h3> Zoro Matcha Hunter</h3>
+                    <img src="Zoro Hunter.jpg" alt="Es Cream Zoro">
+                    <p>Zoro Hunter rasa matcha dengan sentuhan mint, memberikan sensasi segar yang unik!</p>
+                    <p class="price">Rp 48.000</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Coffe Nami</h3>
+                    <img src="Coffe Nami.jpg" alt="Coffe Nami">
+                    <p>Coffe dengan campuran rempah-rempah yang menenangkan. Cocok untuk bersantai atau bekerja.</p>
+                    <p class="price">Rp 48.000</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Ramen Sanji</h3>
+                    <img src="Ramen Sanji.jpg" alt="Ramen Sanji">
+                    <p>Ramen dengan kuah kental dan topping daging sapi lezat, sangat cocok untuk penggemar ramen!</p>
+                    <p class="price">Rp 60.000</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Shakes Brook</h3>
+                    <img src="Sahnkes Brook.jpg" alt="Shankes Brook">
+                    <p>Milkshake manis dengan berbagai pilihan rasa, pilihan terbaik untuk pencinta es krim!</p>
+                    <p class="price">Rp 40.000</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Pizza Chopper</h3>
+                    <img src="Pizza Chopper.jpg" alt="Pizza Chopper">
+                    <p>Pizza dengan topping pepperoni, keju leleh, dan saus pedas yang menggugah selera!</p>
+                    <p class="price">Rp 80.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <table>
+                <tr>
+                    <th>Deskripsi</th>
+                    <td>Cafe One Piece Jakarta adalah tempat yang didedikasikan untuk para penggemar manga dan anime One Piece. Dengan suasana yang nyaman dan makanan yang lezat, kami mengajak Anda merasakan petualangan dunia One Piece melalui makanan dan minuman.</td>
+                </tr>
+                <tr>
+                    <th>Suasana dan Tema</th>
+                    <td>Setiap sudut cafe kami memiliki tema yang mengingatkan Anda pada karakter-karakter favorit dari One Piece, mulai dari Luffy hingga Zoro, Nami, Sanji, Robin, Chopper, Brook, Franky, Ussop, Jinbei. Ayo, nikmati pengalaman kuliner yang berbeda hanya di Cafe One Piece Jakarta!</td>
+                </tr>
+                <tr>
+                    <th>Pengalaman Kuliner</th>
+                    <td>Kami menawarkan suasana yang penuh keajaiban, di mana pengunjung dapat menikmati makanan yang terinspirasi dari dunia One Piece sambil dikelilingi dekorasi unik. Dari poster hingga patung karakter, semuanya dirancang untuk membawa Anda ke dunia Grand Line.</td>
+                </tr>
+                <tr>
+                    <th>Fasilitas</th>
+                    <td>Dengan menu yang bervariasi, kami memastikan bahwa setiap pengunjung menemukan hidangan yang sesuai dengan selera mereka. Tidak hanya itu, kami juga memiliki area bermain untuk anak-anak, ruang acara khusus, dan layanan Wi-Fi gratis untuk kenyamanan Anda.</td>
+                </tr>
+                <tr>
+                    <th>Menu Spesial</th>
+                    <td>Jangan lupa untuk mencoba minuman khas kami, "Kopi Thousand Sunny," dan hidangan penutup "Dessert Grand Line" yang menjadi favorit banyak pengunjung. Kami berkomitmen untuk memberikan pengalaman kuliner yang tak terlupakan bagi Anda dan keluarga.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <div class="container">
+            <h2>Galeri Foto</h2>
+            <div class="gallery-images">
+                <div class="gallery-item">
+                    <img src="Area makan.jpg" alt="Cafe Interior">
+                    <p>Suasana dalam Cafe One Piece</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="Area Marine.jpg" alt="Marine food">
+                    <p>Area Marine food</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="Area Depan Cafe.jpg" alt="Area Outdoor">
+                    <p>Area outdoor dengan tema One Piece</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="Foto Kru Mugiwara.jpg" alt="Karakter One Piece">
+                    <p>Karakter One Piece yang menghiasi cafe</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="facilities">
+        <div class="container">
+            <h2>Fasilitas Kami</h2>
+            <div class="facilities-grid">
+                <div class="facility-item">
+                    <img src="One Piece.jpg" alt="One Piece" class="facility-character">
+                    <h3>Wi-Fi Gratis</h3>
+                    <p>Wi-Fi super cepat untuk semua pengunjung, cocok untuk bekerja atau streaming anime favorit Anda!</p>
+                    <img src="Foto Luffy.jpg" alt="Luffy" class="facility-character" style="width: 30em; height: 20em;">
+                </div>
+                <div class="facility-item">
+                    <h3>Area Indoor & Outdoor</h3>
+                    <p>Rasakan suasana One Piece di area indoor yang nyaman atau outdoor yang sejuk.</p>
+                    <img src="Foto Nami.jpg " alt="Nami" class="facility-character" style="width: 30em; height: 20em;">
+                </div>
+                <div class="facility-item">
+                    <h3>Meja Berbagai Ukuran</h3>
+                    <p>Meja untuk kelompok besar dan kecil, cocok untuk reuni atau pertemuan keluarga.</p>
+                    <img src="Foto Zoro.jpg " alt="Zoro" class="facility-character" style="width: 30em; height: 20em;">
+                </div>
+                <div class="facility-item">
+                    <h3>Ruang Pribadi</h3>
+                    <p>Ruang khusus untuk acara ulang tahun, pertemuan, atau pesta kecil.</p>
+                    <img src="Foto Sanji.jpg    " alt="Sanji" class="facility-character"  style="width: 30em; height: 20em;">
+                </div>
+                <div class="facility-item">
+                    <h3>Menu Anak-anak</h3>
+                    <p>Menu spesial untuk anak-anak dengan rasa lezat dan presentasi yang menggemaskan.</p>
+                    <img src="Foto Chopper.jpg" alt="Chopper" class="facility-character" style="width: 30em; height: 20em;">
+                </div>
+                <div class="facility-item">
+                    <h3>Parkir Luas</h3>
+                    <p>Parkir yang aman dan luas untuk kenyamanan pengunjung kami.</p>
+                    <img src="Foto Nicco Robin.jpg" alt=" NiccoRobin" class="facility-character"  style="width: 30em; height: 20em;">
+                </div>
+            </div>
+        </div>
+
+    
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Alamat: Jl. Puskesmas No.12, RT.10/RW.010 Kel, Kb. Pala, Kec. Makasar, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13650</p>
+            <p>Email: info@cafeonepiece.com</p>
+            <p>Telepon: +62 21 555 1234</p>
+            <form action="#">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cafe One Piece Jakarta. Semua hak cipta dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
